@@ -1,0 +1,310 @@
+/* web developer css style */
+/* Selector {}
+     property : value; */
+     /* add a background image       */
+     /* color: #101010;  black     color: beige; 
+     */ 
+     body {
+        background-image: url(gallery/img/bg-largeimage.jpg) ;
+        background-size: 1px;
+        -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+        background-size: cover;
+        font-family: "Ribik", sans-serif;
+       margin: 0;
+     }
+
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+     }
+
+/*
+.ancizar-serif {
+  font-family: "Ancizar Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} 
+  */
+
+ /*  color -orange #ff7a18 */
+
+  /* img should be on right side of page  for 
+  top presentation  reason */
+  /* for space only , does not appear */
+  .hr-det {
+    margin: 10px auto;
+    color: rgb(255, 255, 255, 0);
+    border: 3px solid rgb(255, 255, 255, 0.0);
+    max-width: 95px;
+    opacity: 0;
+  }
+
+  nav {
+    padding: 5px;
+  }
+  
+img {
+  width: 450px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 20px;
+	transition: all 1s;
+}
+
+img:hover {
+ 	transform: scale(1.1);
+}
+
+
+  /*  h1 style top */
+     .head1-style {
+      font-size: 35px;
+      border-bottom: 2px solid rgba(0, 128, 0, 0.2);
+      width: 500px;
+      height: 100px;
+      text-align: center;
+      -moz-box-shadow:4px 4px 5px #888888;
+	   -ms-box-shadow: 4px 4px 5px #888888;
+	   -webkit-box-shadow: 4px 4px 5px #888888;
+	   -o-box-shadow: 4px 4px 5px #888888;
+	   box-shadow: 4px 4px 5px #888888;
+	    margin-top: 10px;
+      margin-bottom: 2px;
+     }
+
+     /* no margin  */
+  .space-mstyle {
+     margin: 0;
+  }
+     /* flex info */
+     .img-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     }
+
+   /*  the next p tag with get the value not 
+   this one, from the cascade effect */
+     p {
+      color: pink; 
+     }
+ 
+    p {
+      cursor: pointer;
+      text-align: center;
+      color: #101010;
+    line-height: 26px;
+    font-size: .95rem; 
+     font-family: "Ribik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    /*  span transition */
+    span {
+      font-size: 1.9rem;
+    }
+/* container top do 1s  */
+.wrap {
+  margin: 10px;
+}
+.tran-container {
+display: inline-block;
+width: 50px;
+ border-radius: 50%;
+  height: 40px;
+}
+
+/*   .tr-con1   ,  trcon2  is needed  */
+
+    .tr-con2 {
+  border-radius: 10%;
+  height: 15px;
+  margin: 20px auto;
+  width: 40px;
+  padding: 5px;
+  .wrap:hover & {
+    transform: scale(2);
+  }
+}
+
+.tr-con1 {
+  background: #f8f8f8;
+  transition: all 1s;
+}
+
+/* hero-sect about us page button */
+/* hero-sect parent element */
+.hero-sect .btn-xl {
+  padding: .8rem 2rem;
+}
+
+.hero-sect .btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: lowercase;
+  letter-spacing: 0.6px;
+}
+
+.hero-sect .btn-primary {
+  background-color: #ff7a18;
+  border-color: #ff7a18;
+}
+
+
+
+/* login page button  */
+/* .container parent element */
+.container .btn-xl {
+  padding: .8rem 2rem;
+}
+.container .btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: lowercase;
+  letter-spacing: 0.6px;
+  padding: 10px 20px;
+}
+
+.container .btn-primary {
+  background-color: #ff7a18;
+  border-color: #ff7a18;
+}
+
+.container .btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-right-width: 2px;
+}
+/* T */
+.buffer {
+  height: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+/* above transitions example */
+
+    .text-edit1 {
+      font-style: italic;
+     font-weight: bold;
+     text-decoration: line-through;
+    }
+
+    .text-edit2 {
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+   
+      h2, h1 {
+      text-align: center;
+        color: #61050C;       
+        cursor: pointer;
+     }
+
+
+      h2 {
+        color: #61050C;       
+      font-size: 35px;
+     }
+
+     h1 {
+      font-size: 3em;
+     }
+
+/* index.page h2 tag */
+  .h2-home {
+  font-size: 35px;
+   color: #61050C;       
+
+  }
+
+    ul {
+      text-align: right;
+    }
+  /* change to inline-block , use display propery */
+    li {
+    padding: 7px 10px;
+      list-style: none;
+     display: inline-block;
+    }
+/* paragraph with text */
+    .webtext {
+     padding-top: .5rem;
+     padding-bottom: .2rem;
+     margin-bottom: 0rem;
+     margin-top: .5rem;
+     margin-left: 1rem;
+     margin-right: 1rem;
+    }
+
+
+    .active {
+      color: #101010;
+      font-size: 1.2rem;
+    }
+
+    /* hero-sect */
+    .hero-sect {
+      min-height : 90vh;
+      width: 95%;
+      margin: 0 0 0 auto;
+      display: flex;
+      flex: wrap;
+    }
+
+    .hero-intro {
+      flex: 2 1 30rem;
+      text-align: center;
+    }
+/*  keep things  center in column */
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-images {
+      flex: 1 1 30rem;
+      text-align: center;
+    }
+
+#div1 {
+ border: 2px solid rgba(0, 128, 0, 0.2);
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+   .top-img {
+    padding: 8px;
+  float: right;
+ }
+
+.div2-img {
+float: left;
+}
+
+/* .boxmodel { 
+  border: 2px solid rgba(0, 128, 0, 0.5);
+ display: inline-block;
+ padding: 5px 20px 5px 20px;
+ margin: 10px 10px; 
+ width: 100px;
+ height: 500px;
+
+} */
+
+/* clear  the float property  */
+footer {
+  text-align: center;
+  clear: both;
+}
+
