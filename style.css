@@ -21,6 +21,10 @@
   box-sizing: border-box;
      }
 
+a {
+  text-decoration: none;
+}
+
 /*
 .ancizar-serif {
   font-family: "Ancizar Serif", serif;
@@ -205,13 +209,13 @@ width: 50px;
    
       h2, h1 {
       text-align: center;
-        color: #61050C;       
+      color: #101010;
         cursor: pointer;
      }
 
 
       h2 {
-        color: #61050C;       
+      color: #101010;    
       font-size: 35px;
      }
 
@@ -222,8 +226,7 @@ width: 50px;
 /* index.page h2 tag */
   .h2-home {
   font-size: 35px;
-   color: #61050C;       
-
+   color: #101010;
   }
 
     ul {
@@ -235,6 +238,11 @@ width: 50px;
       list-style: none;
      display: inline-block;
     }
+    li a {
+      text-decoration: none;
+      color: #101010;
+    }
+
 /* paragraph with text */
     .webtext {
      padding-top: .5rem;
@@ -284,8 +292,9 @@ width: 50px;
 }
 
    .top-img {
-    padding: 8px;
-  float: right;
+    text-align: center;
+    padding: 12px;
+    float: right;
  }
 
 .div2-img {
