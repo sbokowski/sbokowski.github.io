@@ -25,14 +25,12 @@ a {
   text-decoration: none;
 }
 
-/*
-.ancizar-serif {
-  font-family: "Ancizar Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} 
-  */
+
+/* font smoothing */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
  /*  color -orange #ff7a18 */
 
@@ -61,6 +59,27 @@ img {
 
 img:hover {
  	transform: scale(1.1);
+}
+
+/*  nav tailwind material class */
+
+.main-top-nav  {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.push-rt {
+  margin-left: auto;
+}
+
+.pad-det {
+  padding: 1.8rem;
+}
+
+.backg-wh {
+  background: white;
 }
 
 
