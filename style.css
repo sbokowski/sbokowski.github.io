@@ -57,10 +57,6 @@ a {
  }
   
 img {
-  width: 450px;
-  height: 350px;
-  margin: 20px;
-  border-radius: 20px;
 	transition: all 1s;
 }
 
@@ -89,33 +85,27 @@ img:hover {
   background: white;
 }
 
-
-  /*  h1 style top */
-     .head1-style {
-      font-size: 35px;
-      border-bottom: 2px solid rgba(0, 128, 0, 0.2);
-      width: 500px;
-      height: 100px;
-      text-align: center;
-      -moz-box-shadow:4px 4px 5px #888888;
-	   -ms-box-shadow: 4px 4px 5px #888888;
-	   -webkit-box-shadow: 4px 4px 5px #888888;
-	   -o-box-shadow: 4px 4px 5px #888888;
-	   box-shadow: 4px 4px 5px #888888;
-	    margin-top: 10px;
-      margin-bottom: 2px;
-     }
-
      /* no margin  */
   .space-mstyle {
      margin: 0;
   }
-     /* flex info */
-     .img-contain {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-     }
+
+
+  /* grid wrapper container */
+   .grid-container {
+   display: grid;
+   grid-gap: 20px;
+   /*   minmax 350px, 1fr  */
+   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+   }
+
+     /* grid box */
+   .grid-box {
+   background-color: white;
+   padding: 80px;
+   margin-top: 10px;
+   }
+
 
    /*  the next p tag with get the value not 
    this one, from the cascade effect */
