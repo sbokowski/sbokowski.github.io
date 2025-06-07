@@ -106,6 +106,20 @@ img:hover {
    margin-top: 10px;
    }
 
+/*  border for image */
+   .grid-box img {
+    border-radius: .79rem;
+   }
+
+.grid-box img {
+	transition: all 1s;
+}
+
+.grid-box img:hover {
+ 	transform: scale(1.1);
+}
+
+
 
    /*  the next p tag with get the value not 
    this one, from the cascade effect */
