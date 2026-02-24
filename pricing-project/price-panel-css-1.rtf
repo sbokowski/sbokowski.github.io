@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww18860\viewh17400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs58 \cf0  Pricing panel  directions , coding for CSS \
+ Style sheet .  
+\fs46 \
+\
+(Edit by Shaun Bokowski,  Feb 	8 2026 )\
+  \
+1.      You can add a reset to CSS sheet or \
+	add external reset sheet for more compatible issues.\
+   \
+2   Alright , we need to add a background color: #60a9ff\
+\
+3.  Next, we need to add a font family, we can use  \
+	Open Sans. , make sure  to have single quote on\
+	your font  \'91Open Sans\'92  \
+\
+4. Next. We add some box-sizing: border-box  to html \
+ 	element .\
+\
+5. Next we can add the .panel class -  add some white \
+	background to page\
+\
+6. Add some flex box to body display: flex ,  ,we need to \
+ Center if horizontally  and vertically \
+     Add : display: flex;\
+  justify-content: center;\
+  align-items: center;  to body tag , for this tutorial ,  \
+ 	make example , show how flex box works. \
+        Feb, 20 , 2026 \
+7. We can add some height, set height min-height: 100vh; \
+  Which means it will take up 100vh , minimum height \
+ \
+8. Then we can more styling to .panel class - add a border radius \
+	of 10px , which makes the corner round.  \
+\
+9. Next , for .panel class - add some padding  , 15px , and 25px , so\
+	both top , and bottom have 15px, and left , right have 25px each\
+\
+10.   Width of .panel will get 100% width , and a max-width: 960px , \
+	so the width will get maximum width of 960px. \
+         Feb 22,   2026.
+\f1\b    New
+\f0\b0 \
+11. Next we will work , code on the inner content. Located inside the .panel \
+	class area so it can look fully organized , in the final layout look.\
+\
+12. The three column , with images , text layout that we have now. \
+   When  we resize window it will stack nicely in a mobile device.\
+\
+13.  For the default layout , for mobile and larger screen , we\'92ll create \
+	mobile first .  Fro larger screen it will be adjust to the row based , not\
+	the column based.\
+\
+14.  We will begin coding on the current size.  We will add display: flex \
+	to .panel class , when this happens by default layout be rows , straight \
+	across horizontally.\
+\
+15. Now we\'92ll have to change it to flex-direction: column .  That will change it\
+ 	to the layout vertically up and down.   Which is what we want for the small\
+	screen layout \
+\
+16. When  we add some media queries later for larger screens , the layout\
+	will change as the window screens adjust from mobile size to larger \
+	screens. \
+             
+\f1\b  New 
+\f0\b0 \
+17. Next, we can do some typography , center text for layout , do \
+	text-align: center in .panel class . And apply text-transform: uppercase \
+   	the text in .panel - make text uppercase.\
+\
+18 Next in line , we can add some borders   , to give outline some detail to\
+ 	stand out.   We will go to pricing plan part , add some border bottom .\
+\
+19. Add a class of .pricing-plan , we can add border-bottom: 1px solid \
+\
+20. If we don\'92t want the last border at the bottom , not to have a border,	we can do .pricing-plan:last-child \{ border-bottom: none \} \
+\
+21. Alright, Next up we can add some spacing to images, by add margin to\
+	images .   We can see there\'92s an image in each pricing plan class\
+\
+22. Add a class of .pricing-img \{ margin-bottom: 25px; \}\
+     
+\f1\b  New  above code added  , End / of tutorial Search online for tutorials\
+
+\f0\b0  	on how to learn more in  web design, development  \
+\
+23. Now, also add a width of 100% to  pricing-ing \{ margin-bottom: 25px; 100% \}}
