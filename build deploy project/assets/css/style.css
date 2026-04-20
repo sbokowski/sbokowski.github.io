@@ -1,0 +1,14 @@
+/* default styles */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: Mukta, sans-serif;
+}
+/* set the font size in relation so works when commputed */
+html {
+    font-size: 62.5%;
+}
+/* end default style */
