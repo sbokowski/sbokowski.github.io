@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, fast starting point for your favorite sites, searches, projects, and daily web workflow.">
+  <title>Web Learning — Topics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <!-- Hero (as provided) -->
+    <section class="hero" id="overview" aria-labelledby="overview-title">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR WEB STARTS HERE</p>
+        <h1 id="overview-title" class="feature reveal show">Start Building.<br>
+        <span>Explore and Build</span></h1>
+        <p class="hero-text">A clean, fast starting point for your favorite sites, searches, projects, and daily web
+          workflow.</p>
+      </div>
+
+      <div class="hero-search">
+        <form class="search-box" id="searchForm" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search the web" autocomplete="off" aria-label="Search the web">
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="search-engines" aria-label="Search engine">
+          <button type="button" data-engine="Google" class="active" aria-pressed="true">Google</button>
+          <button type="button" data-engine="Bing" aria-pressed="false">Bing</button>
+          <button type="button" data-engine="DuckDuckGo" aria-pressed="false">DuckDuckGo</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation: separate section, below the hero -->
+    <section class="nav-section" id="topics" aria-labelledby="topics-title">
+      <h2 id="topics-title" class="nav-heading">Web Learning Topics</h2>
+      <nav class="nav-bar" aria-label="Web learning topics">
+        <ul>
+          <li><button class="nav-chip active" type="button" aria-pressed="true">HTML &amp; CSS</button></li>
+          <li><button class="nav-chip" type="button" aria-pressed="false">CSS Guide</button></li>
+          <li><button class="nav-chip" type="button" aria-pressed="false">JavaScript</button></li>
+          <li><button class="nav-chip" type="button" aria-pressed="false">Responsive Design</button></li>
+          <li><button class="nav-chip" type="button" aria-pressed="false">Web Design</button></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
