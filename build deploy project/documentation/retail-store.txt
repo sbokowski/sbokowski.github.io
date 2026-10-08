@@ -1,0 +1,45 @@
+    Documentation  for Retail store :
+
+  Directions for website design strategy 
+
+     Base site direction 
+   1     I want the site to feel like a modern independent online store, not like Apple or a large corporate website.
+
+   2     Use the website as a clean base e-commerce 
+	template.
+  
+  3   Modern Shopify / web flow style storefront
+      
+  4   Use web flow e-commerce examples as the 
+	general design direction 
+
+       Key idea: 
+      Do not over design the site. I want the foundation
+	to be simple , modern, spacious and easy to
+	expand.
+
+  5   The images used for gallery find them at web site Unsplash.com
+
+    6  The primary  purpose of the website to showcase 
+	products visually . 
+       Make id. In web page on web page to go to documentation
+           <h3 id=“template”> Documentation</h3>
+     <a href=“#template”>name</a>
+      Use these design characteristics:
+	•	Clean, spacious layout
+	•	Simple top navigation
+	•	Large product imagery
+	⁃	4-column product grid on desktop
+	•	2-column grid on tablet
+	•	1-column grid on mobile
+	•	Product name and price clearly visible
+	•	Short product descriptions
+	•	Simple category navigation
+	•	Minimal cards
+	•	Subtle borders and shadows
+	•	Rounded corners where appropriate
+	•	Large whitespace
+	•	Modern sans-serif typography
+	•	Simple black/white base with one accent color
+	•	Strong visual hierarchy
+	•	Product images should dominate the page
