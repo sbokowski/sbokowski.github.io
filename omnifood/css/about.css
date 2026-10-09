@@ -1,0 +1,417 @@
+/**************************/
+/* ABOUT PAGE */
+/* Green theme + customer-focused layout */
+/**************************/
+
+body {
+  font-family: "Poppins", "Rubik", sans-serif;
+}
+
+/* --- Color overrides (shared components: orange -> green) --- */
+
+/* Keep headings bold & dark at all breakpoints */
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+}
+
+.subheading {
+  color: #2b8a3e;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #2b8a3e;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #237032;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.8rem rgba(43, 138, 62, 0.5);
+}
+
+/**************************/
+/* HEADER / NAVIGATION */
+/**************************/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  padding: 0 4.8rem;
+  background-color: #333;
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.header .logo {
+  filter: brightness(0) invert(1);
+}
+
+.icon-mobile-nav {
+  color: #fff;
+}
+
+/* Minimal nav: logo left + hamburger (drawer menu on all screens) */
+.btn-mobile-nav {
+  display: block;
+  position: relative;
+  z-index: 1000;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 32rem;
+  max-width: 85vw;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+  z-index: 998;
+}
+
+.nav-open .main-nav {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0s;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav .main-nav-link:link,
+.main-nav .main-nav-link:visited {
+  font-size: 2rem;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #fff;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #d3f9d8;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #2b8a3e;
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #40c057;
+}
+
+.main-nav-link[aria-current="page"] {
+  color: #d3f9d8;
+}
+
+/**************************/
+/* HERO */
+/**************************/
+
+.section-about-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 72rem;
+}
+
+.about-hero-content .heading-primary {
+  color: #fff;
+}
+
+.about-hero-content .subheading {
+  color: #d3f9d8;
+}
+
+.about-hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 4.8rem;
+}
+
+.about-hero-content .btn--outline:link,
+.about-hero-content .btn--outline:visited {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.about-hero-content .btn--outline:hover,
+.about-hero-content .btn--outline:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/**************************/
+/* MISSION */
+/**************************/
+
+.section-about-mission {
+  background-color: #fff;
+  padding: 9.6rem 0;
+}
+
+.about-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.about-mission-img {
+  width: 100%;
+  height: 34rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.about-mission-text-box .heading-secondary {
+  margin-bottom: 2.4rem;
+}
+
+.about-mission-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/**************************/
+/* FEATURES */
+/**************************/
+
+.section-about-features {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.about-features-heading {
+  margin-bottom: 4.8rem;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 6.4rem;
+  align-items: center;
+}
+
+.about-feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.about-feature-card {
+  padding: 3.2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.12);
+}
+
+.about-feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #2b8a3e;
+  margin-bottom: 1.6rem;
+}
+
+.about-feature-card .heading-tertiary {
+  margin-bottom: 1.2rem;
+}
+
+.about-feature-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.about-features-img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+/**************************/
+/* CTA */
+/**************************/
+
+.section-about-cta {
+  background-color: #fff;
+  padding: 9.6rem 0 12.8rem 0;
+}
+
+.about-cta-box {
+  text-align: center;
+  border-radius: 12px;
+  padding: 6.4rem;
+  background-image: linear-gradient(to right bottom, #2b8a3e, #237032);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.about-cta-box .subheading {
+  color: #d3f9d8;
+}
+
+.about-cta-heading {
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+
+.about-cta-box .btn--full:link,
+.about-cta-box .btn--full:visited {
+  background-color: #fff;
+  color: #237032;
+}
+
+.about-cta-box .btn--full:hover,
+.about-cta-box .btn--full:active {
+  background-color: #d3f9d8;
+}
+
+/**************************/
+/* RESPONSIVE */
+/**************************/
+
+/* Below 1200px (smaller desktops) */
+@media (max-width: 75em) {
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+/* Below 944px (tablets) */
+@media (max-width: 59em) {
+  .about-mission-grid,
+  .about-features-grid {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .section-about-hero {
+    min-height: 72vh;
+  }
+
+  .about-hero-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* Put text above image on smaller screens */
+  .about-mission-text-box {
+    order: -1;
+  }
+
+  .about-mission-img {
+    height: 30rem;
+  }
+
+  .about-features-img {
+    height: 36rem;
+  }
+
+  .about-cta-box {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .btn-mobile-nav {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    background-color: rgba(51, 51, 51, 0.97);
+  }
+}
+
+/* Below 544px (phones) */
+@media (max-width: 34em) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .section-about-hero {
+    min-height: 88vh;
+  }
+
+  .about-hero-description {
+    font-size: 1.8rem;
+  }
+
+  .about-features-img,
+  .about-mission-img {
+    height: 28rem;
+  }
+}
